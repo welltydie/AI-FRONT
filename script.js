@@ -10,7 +10,7 @@ function init() {
     }
     // 팝업 창 표시
     Swal.fire({
-      title: "🤔분석중..",
+      title: "번역중..",
       html: "잠시 기다려 주세요...",
       allowOutsideClick: false,
       allowEscapeKey: false,
@@ -54,7 +54,7 @@ async function getCode(questCode) {
     let content = code.replace(/\*\*/g, '✨');
     content = content.replace(/\n/g, '<br>');; 
     Swal.fire({
-      title: '😁분석결과',
+      title: '번역결과',
       html: '<div style="text-align: left;">' + content + '</div>',  
     });
   } catch (error) {
