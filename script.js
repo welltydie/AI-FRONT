@@ -10,7 +10,7 @@ function init() {
     }
     // 팝업 창 표시
     Swal.fire({
-      title: "번역중..",
+      title: "생각중..",
       html: "잠시 기다려 주세요...",
       allowOutsideClick: false,
       allowEscapeKey: false,
@@ -40,7 +40,7 @@ async function getCode(questCode) {
     } catch (error) { 
         Swal.fire({
           title: '에러',
-          text: '분석 중 에러가 발생했습니다!',
+          text: '답변 중 에러가 발생했습니다!',
           icon: 'error',
           confirmButtonText: '닫기'
         });
@@ -61,7 +61,7 @@ async function getCode(questCode) {
     console.error('Error:', error); 
     Swal.fire({
       title: '에러',
-      text: '분석 중 에러가 발생했습니다!',
+      text: '답변 중 에러가 발생했습니다!',
       icon: 'error',
       confirmButtonText: '닫기'
     });
