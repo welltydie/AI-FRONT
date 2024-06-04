@@ -27,7 +27,7 @@ function init() {
 };
 
 async function getCode(questCode) {
-  const Url = `https://port-0-ai-back-1272llwz197xc.sel5.cloudtype.app/generate`;
+  const Url = `https://port-0-ai-back-1272llwz197xc.sel5.cloudtype.app/`;
   const Data = JSON.stringify({ userInput: questCode });   
   let response; 
     try {
@@ -54,7 +54,7 @@ async function getCode(questCode) {
     let content = code.replace(/\*\*/g, '✨');
     content = content.replace(/\n/g, '<br>');; 
     Swal.fire({
-      title: '번역결과',
+      title: '답변결과',
       html: '<div style="text-align: left;">' + content + '</div>',  
     });
   } catch (error) {
